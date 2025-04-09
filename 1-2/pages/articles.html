@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Галерея</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f4f4f4;
+      }
+      nav {
+        background: #333;
+        padding: 15px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 15px;
+        font-size: 18px;
+      }
+      .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      a.gallery-item {
+        display: block;
+        margin-bottom: 30px;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.3s, color 0.3s;
+      }
+      a.gallery-item:hover {
+        transform: scale(1.03);
+        color: #ff5722;
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s;
+      }
+      img:hover {
+        transform: scale(1.05);
+      }
+      p {
+        font-size: 18px;
+        margin-top: 10px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+      a.gallery-item:hover p {
+        color: #ff5722;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Главная</a>
+      <a href="contacts.html">Форма</a>
+      <a href="articles.html">Галерея</a>
+      <a href="about.html">Топ-6 мест</a>
+    </nav>
+    <div class="container">
+      <h1>Галерея</h1>
+      <div>
+        <a class="gallery-item" href="gallery/Elieftour.jpg" target="_blank">
+          <img src="gallery/Elieftour.jpg" alt="Эйфелева башня" />
+          <p>Эйфелева башня</p>
+        </a>
+        <a class="gallery-item" href="gallery/GrandCanyon.jpg" target="_blank">
+          <img src="gallery/GrandCanyon.jpg" alt="Гранд-Каньон" />
+          <p>Гранд-Каньон</p>
+        </a>
+        <a class="gallery-item" href="gallery/MachuPiсchu.jpg" target="_blank">
+          <img src="gallery/MachuPiсchu.jpg" alt="Мачу-Пикчу" />
+          <p>Мачу-Пикчу</p>
+        </a>
+        <a
+          class="gallery-item"
+          href="gallery/SydneyOperaHouse.jpg"
+          target="_blank"
+        >
+          <img src="gallery/SydneyOperaHouse.jpg" alt="Сиднейская опера" />
+          <p>Сиднейская опера</p>
+        </a>
+        <a class="gallery-item" href="gallery/ChinaWall.jpg" target="_blank">
+          <img src="gallery/ChinaWall.jpg" alt="Великая китайская стена" />
+          <p>Великая китайская стена</p>
+        </a>
+        <a
+          class="gallery-item"
+          href="gallery/AmphitheatrumFlovium.jpg"
+          target="_blank"
+        >
+          <img src="gallery/AmphitheatrumFlovium.jpg" alt="Колизей" />
+          <p>Колизей</p>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
