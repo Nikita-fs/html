@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Кубики</title>
+    <style>
+      body {
+        background: #fff;
+      }
+      .row {
+        background: #eee;
+        overflow: hidden;
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 80px;
+        box-sizing: border-box;
+      }
+      .box {
+        width: 100px;
+        height: 50px;
+        background: #999;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .mr {
+        margin-right: 10px;
+      }
+      .ml {
+        margin-left: 10px;
+      }
+      .center {
+        width: 100%;
+        text-align: center;
+      }
+      .vertical-stack {
+        float: right;
+        display: inline;
+      }
+      .vertical-stack .box {
+        display: block;
+        margin-bottom: 10px;
+      }
+      .center-stack {
+        width: 320px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="box left"></div>
+      <div class="box right"></div>
+    </div>
+
+    <div class="row">
+      <div class="box left"></div>
+      <div class="box right ml"></div>
+      <div class="box right"></div>
+    </div>
+
+    <div class="row">
+      <div class="box left mr"></div>
+      <div class="box left"></div>
+      <div class="box right ml"></div>
+      <div class="box right"></div>
+    </div>
+
+    <div class="row" style="height: 120px">
+      <div class="box right ml"></div>
+
+      <div class="vertical-stack" style="float: right">
+        <div class="box" style="margin-bottom: 10px"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+
+    <div class="row" style="height: 200px">
+      <div class="center-stack">
+        <div class="box" style="margin: 0 auto 10px auto"></div>
+        <div class="box left"></div>
+        <div class="box right"></div>
+      </div>
+    </div>
+  </body>
+</html>
